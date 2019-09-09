@@ -26,23 +26,23 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, index: true|
 |email|string|null: false|
 |password|string|null: false|
 ### Association
-- has_many :groups, through: :groups_names
+- has_many :groups, through: :groups_users
 - has_many :comments
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
+|name|text|null: false|
 ### Association
 - belongs_to :user
 - has_many :comments
-- has_many :groups_names
+- has_many :groups_users
 
-## groups_namesテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null: false, foreign_key: true|
