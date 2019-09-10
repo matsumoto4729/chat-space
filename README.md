@@ -46,8 +46,8 @@ Things you may want to cover:
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|reference|null: false, foreign_key: true|
-|user|reference|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
@@ -55,10 +55,10 @@ Things you may want to cover:
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|text||
-|user|reference|null: false, foreign_key: true|
-|group|reference|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :group
 - belongs_to :user
