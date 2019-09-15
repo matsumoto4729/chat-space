@@ -1,0 +1,100 @@
+.chat { 
+  width: calc(100% - 300px);
+  .header{
+    box-sizing: border-box;
+    height: 100px;
+    padding: 0 40px;
+    .left-header{
+      float: left;
+      &__title{
+        color: #333333;
+        font-size: 20px;
+        margin-top: 35px;
+      }
+      &__members{
+        color: #999999;
+        font-size: 12px;
+        margin-top: 15px;
+        &__member{
+          display: inline-block;
+          padding-right: 5px;
+        }
+    }
+    .right-header{
+      border: 1px solid $light_blue;
+      float: right;
+      color: $light_blue;
+      margin-top: 28px;
+      height: 40px;
+      padding: 0 20px;
+    }
+  }
+  .messages{
+    box-sizing: border-box;
+    height: clac(100% - 100px - 90px);
+    background-color: #FAFAFA;
+    padding: 46px 40px 0;
+    .message{
+      .upper-message{
+        display: flex;
+        %__user-neme{
+          font-size: 16px;
+          font-weight: blod;
+          color: #434A54;
+        }
+        %__date{
+          font-size: 12px;
+          color: #999999;
+          padding-left: 10px;
+        }
+      }
+      .lower-message{
+        margin-top: 10px;
+        &__content{
+          margin-top: 40px;
+          font-size: 14px;
+          color: #434A54;
+        }
+      }
+    }
+  }
+  .form{
+    box-sizing: border-box;
+    background-color: #dddddd;
+    height: 90px;
+    padding: 20px 40px 20px 40px;
+    &__message{
+      height: 50px;
+      background-color: $white;
+      border: none;
+      float: left;
+      padding-left: 10px;
+    &__mask{
+      float: right;
+      padding-right: 10px;
+      background-color: $white;
+      $__image{
+
+      }
+    }
+
+
+    }
+
+
+
+
+
+
+
+  }
+    
+
+
+
+
+
+
+
+
+}
