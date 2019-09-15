@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
- def index
-  render "messages/index"
- end
-  
+  def index
+    render "messages/index"
+  end
 end
+
