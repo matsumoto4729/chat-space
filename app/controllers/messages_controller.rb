@@ -3,4 +3,3 @@ class MessagesController < ApplicationController
     render "messages/index"
   end
 end
-

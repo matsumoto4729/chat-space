@@ -5,4 +5,10 @@
 @import "mixins/vendor_prefix";
 @import "modules/side_bar";
 @import "modules/chat";
-@import "messages/messages.scss"
+@import "messages/messages.scss";
+@import "modules/user";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "config/colors";
+@import "modules/flash";
+@import "modules/group";
